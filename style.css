@@ -100,7 +100,7 @@ nav ul li{
     display: grid;
     align-self: center;
     position: relative;
-    top: 40%;
+    top: 150px;
 }
 
 .topnav {
@@ -149,18 +149,35 @@ nav ul li{
         position: relative;
         right: 0px;
         justify-content: space-around;
-        padding-top: 480px;
+        padding-top: 350px;
         
     }
+
+    .top-text{
+        font-size: 50px;
+    }
+    
     
 }
 
+@media (min-device-width: 120px) and (max-device-width: 480px) {
+    .top-text{
+        font-size: 40px;
+    }
+}
+
+@media (min-device-width: 120px) and (max-device-width: 300px) {
+    .top-text{
+        font-size: 30px;
+    }
+}
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
+    
   }
   
   @media screen and (max-width: 600px) {
