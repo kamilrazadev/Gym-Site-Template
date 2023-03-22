@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nanum Gothic', sans-serif;  
+    font-family: 'Nanum Gothic Condensed', sans-serif;  
       
 }
 
@@ -73,7 +73,9 @@ body{
 }
 
 .mail-and-num li{
-    padding: 10px;
+    position: relative; 
+    /* top: 0px; */
+    margin: 10px 20px;
 }
 
 nav{
@@ -103,11 +105,60 @@ nav ul li{
     top: 150px;
 }
 
+.top-button{
+    position: relative;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.top-button button{
+    background-color: rgb(219, 106, 0);
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 15px 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.top-button button:hover{
+    background-color: rgb(218, 123, 35);
+    color: black;
+}
+
+.logo{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-items: center;
+    position: absolute;
+    left: 10px;
+}
+
+.logo div{
+    
+    margin: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    color: rgb(218, 123, 35);
+
+}
+
+.logo img{
+    height: 25px;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: right;
   }
-  
+
+
   .topnav a {
     float: left;
     display: block;
@@ -145,11 +196,13 @@ nav ul li{
         grid-gap: 5px;
     }
 
-    .mail-and-num{
+    .mail-and-num , .mail{
         position: relative;
         right: 0px;
         justify-content: space-around;
-        padding-top: 350px;
+        padding-top: 320px;
+        color: white;
+
         
     }
 
@@ -168,19 +221,30 @@ nav ul li{
 
 @media (min-device-width: 120px) and (max-device-width: 300px) {
     .top-text{
-        font-size: 50px;
+        font-size: 20px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
+
+    .topnav{
+        display: block;
+    }
+
+    .logo{
+        display: inline-block;
+        position: inherit;
+    }
+
+    
     
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 780px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
