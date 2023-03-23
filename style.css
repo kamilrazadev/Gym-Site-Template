@@ -125,6 +125,8 @@ nav ul li{
 }
 
 .top-button button:hover{
+    transform: scale(0.9);
+    transition: .6s;
     background-color: #fb5b21;
     color: black;
 }
@@ -340,6 +342,87 @@ body{
     background-color: #fb5b21;
     border-radius: 49%; 
     padding: 10px;
+  }
+
+  .classes{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Roboto Condensed',sans-serif;
+  }
+  
+  
+  .cs-heading{
+    color: #fb5b21;
+    font-weight: bolder;
+    }
+  
+  .wh-heading{
+    color: #222429;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 50px;
+    }
+  
+  .days ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: #222429;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+  }
+  
+  .days ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .days ul li:hover{
+    background-color:#fb5b21;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 170ms;
+  }
+  
+  .timing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .timing div{
+    text-align: center;
+    background-color: #222429;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 5px 2px #222429;
+  }
+  
+  .timing div:hover{
+    transition: 300ms;
+    transform: scale(1.05);
+  }
+  
+  .time{
+    color: white;
+    padding: 15px;
+  }
+  
+  .type{
+    color: #fb5b21;
+    padding: 10px;
+  
+  }
+  
+  .t-name{
+    font-family: 'Open Sans', sans-serif;
   }
   
   @media (max-width: 620px) {
