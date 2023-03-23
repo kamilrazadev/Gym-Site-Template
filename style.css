@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nanum Gothic Condensed', sans-serif;  
       
 }
 
 body{
     color: white;
+    font-family: 'Nanum Gothic Condensed', sans-serif;  
+
 }
     /* TO REMOVE SCROLL BAR  */
 /* ::-webkit-scrollbar {
@@ -57,7 +58,7 @@ body{
 
 .mail{
     text-decoration: none;
-    color: rgb(219, 106, 0);
+    color: #fb5b21;
 }
 
 .mail-and-num{
@@ -67,9 +68,7 @@ body{
     list-style: none;
     color: white;
     display: flex;
-    color: rgb(219, 106, 0);
-
-   
+    color: #fb5b21;   
 }
 
 .mail-and-num li{
@@ -114,7 +113,7 @@ nav ul li{
 }
 
 .top-button button{
-    background-color: rgb(219, 106, 0);
+    background-color: #fb5b21;
     color: white;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -125,7 +124,7 @@ nav ul li{
 }
 
 .top-button button:hover{
-    background-color: rgb(218, 123, 35);
+    background-color: #fb5b21;
     color: black;
 }
 
@@ -143,7 +142,7 @@ nav ul li{
     margin: 5px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
-    color: rgb(218, 123, 35);
+    color: #fb5b21;
 
 }
 
@@ -175,7 +174,7 @@ nav ul li{
   }
   
   .topnav a.active {
-    background-color: rgb(219, 106, 0);
+    background-color: #fb5b21;
     color: white;
   }
   
@@ -212,6 +211,161 @@ nav ul li{
     
     
 }
+
+body{
+    font-family: 'Open Sans', sans-serif;  
+    color: #b7bcbe;
+  }
+  .footer-widget {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #222429;
+  }
+  
+  
+  
+  .footer{
+    display: grid;
+    background-color: #222429;
+  
+  }
+  
+  h3{
+    color: white;
+    font-size: 26px;
+    font-family: 'Roboto Condensed', sans-serif;  
+  
+  }
+  
+  .footer-widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-widget ul li {
+    margin: 15px;
+  }
+  
+  .footer-widget ul li a {
+    color: #b7bcbe;
+  }
+  
+  .footer-widget a{
+    text-decoration: none;
+  }
+  
+  .footer-widget ul li a:hover {
+    color: #747575;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-form .form-group {
+    display: flex;
+  }
+  
+  .signup-form .form-control {
+    flex-grow: 1;
+    margin-right: 0px;
+    border-radius: 0px ;
+    border: none;
+    height: 40px;
+  }
+  
+  .signup-form {
+  
+    background-color: #fb5b21;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button{
+    background-color: #111111;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .signup-form .btn:hover {
+    background-color: #3b3b3b;
+  }
+  
+  .signup-note {
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .orange-background{
+    padding: 10px;
+    background-color: #fb5b21;
+    position: relative;
+    right: 30px;
+    text-align: center;
+    margin-top: 0px;
+    
+  }
+  
+  
+  .row2{
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .row2 div{
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .arrow {
+    color: #fb5b21;
+  } 
+  
+  .foot-icons{
+    font-size: 17px;
+    color: white; 
+    background-color: #fb5b21;
+    border-radius: 49%; 
+    padding: 10px;
+  }
+  
+  @media (max-width: 620px) {
+    .footer-widget {
+      text-align: center;
+      
+    }
+    .orange-background{
+        position: relative;
+        right: 0px;
+
+    }
+  }
+  
+  @media (min-width: 621px) and (max-width: 860px) {
+    .footer-widget {
+      width: 50%;
+      float: left;
+    }
+  }
+  
+  @media (min-width: 861px) {
+    .footer-widget {
+      width: 25%;
+      float: left;
+    }
+  }
 
 @media (min-device-width: 120px) and (max-device-width: 480px) {
     .top-text{
