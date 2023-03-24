@@ -400,7 +400,7 @@ body{
     text-align: center;
     background-color: #222429;
     margin: 30px;
-    padding: 40px;
+    padding: 40px 50px 40px 50px;
     border-radius: 3px;
     box-shadow: 0px 3px 5px 2px #222429;
   }
@@ -425,6 +425,145 @@ body{
     font-family: 'Open Sans', sans-serif;
   }
   
+  .trainers{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Roboto Condensed',sans-serif;
+  }
+  
+  .trainer-main-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ot-heading{
+    color: #fb5b21;
+    font-weight: bolder;
+    }
+  
+  .et-heading{
+    color: #222429;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 50px;
+    }
+  
+  
+  .trainer-class {
+    box-shadow: 0px 3px 5px 2px #222429;
+      margin: 20px;
+      background-color: #222429;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      width: 300px;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+  
+    /* .trainer-icon-main{} */
+  
+    .trainer-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  
+    .trainer-icon:hover{
+      transition: 700ms;
+      transform: scale(1.2);
+    }
+  
+    
+    .trainer-img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .overlay{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .trainer-class .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(43, 43, 43, 0.623);
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 1;
+    }
+    
+    
+    .trainer-class:hover .overlay {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    .trainer-class:hover .trainer-img{
+      transition: 900ms;
+      transform: scale(1.05);
+    }
+    
+    .trainer-class .text {
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      color: #fff;
+      z-index: 2;
+    }
+    
+    .trainer-class h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    .trainer-class p {
+      margin: 0;
+      font-size: 15px;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 10px;
+    }
+
+   
+
+    @media (min-device-width: 120px) and (max-device-width: 665px) {
+      .trainer-class{
+        width: 80%;
+        height: 40%;
+      }
+    }
+    
+    
+    
+    @media (min-device-width: 666px) and (max-device-width: 1200px) {
+      .trainer-class{
+        width: 44%;
+        height: 30%;
+      }
+    }
+    
+    @media (min-device-width: 1201px) and (max-device-width: 1400px) {
+      .trainer-class{
+        width: 30%;
+        height: 20%;
+      }
+     
+    }
+
   @media (max-width: 620px) {
     .footer-widget {
       text-align: center;
