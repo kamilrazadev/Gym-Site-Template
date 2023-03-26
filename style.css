@@ -11,9 +11,9 @@ body{
 
 }
     /* TO REMOVE SCROLL BAR  */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-  } */
+  }
 
 
 .mt{
@@ -474,6 +474,10 @@ body{
       width: 40px;
       background-color: white;
       border-radius: 50%;
+      font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  margin: 10px;
     }
   
     .trainer-icon:hover{
@@ -538,7 +542,251 @@ body{
       margin-top: 10px;
     }
 
-   
+    .joinus {
+      color: black;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 10px;
+      /* margin: 40px; */
+    }
+    
+    .join-heading{
+      color: black;
+      padding: 20px 0px;
+    }
+    
+    .col-50 {
+      flex: 50%;
+    }
+    
+    .col-75 {
+      flex: 75%;
+    }
+    
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
+    
+    .joincontainer {
+      background-color: #f2f2f2;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    
+    .joinin[type=text] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+    
+    .joinbtn {
+      background-color: #fb5b21;
+      color: white;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    
+    .joinbtn:hover {
+      background-color: #fb5b21ea;
+    }
+    
+    
+.contactus{
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+
+
+.text{
+  position: relative;
+  bottom: 0;
+}
+
+.contact-main{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-class {
+  
+  box-shadow: 0px 3px 5px 2px #222429;
+    margin: 20px;
+    background-color: #222429;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  
+  .contact-class .text {
+    /* position: absolute; */
+    /* bottom: 0; */
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .contact-class h2 {
+    color: #fb5b21;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .contact-class p {
+    margin: 0;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+  }
+
+
+  .contact-icon{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: white; 
+    background-color: #fb5b21;
+    border-radius: 50%; 
+    padding: 10px;
+    
+  }
+
+.aboutus{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content{
+
+  margin: 30px;
+  position: relative;
+  width: 48%;
+  
+  /* border: 2px solid red; */
+}
+
+.about-heading{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed';
+  z-index: 1;
+}
+
+
+.about-p p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-img{
+  margin: 30px;
+  position: relative;
+  width: 40%;
+  /* border: 2px solid red; */
+  z-index: 2;
+  
+}
+
+.about-img img{
+  position: relative;
+  width: 100%;
+}
+
+.about-end{
+  
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: #1a1c1f;
+  z-index: 3;
+}
+
+.about-end button{ 
+  margin-top: 20px;
+  margin-left: 6%; 
+  position: relative;
+  width: 40%;
+  background-color: #fb5b21;
+  border-radius: 3px;
+}
+
+@media (min-device-width: 120px) and (max-device-width: 999px) {
+  .about-content{
+    width: 80%;
+  }
+  .about-heading{
+    position: relative;
+    width: 80%;
+  }
+
+  .about-img{
+    width: 80%;
+  }
+}
+
+
+@media (min-device-width: 120px) and (max-device-width: 665px) {
+  .contact-class{
+    width: 80%;
+  }
+}
+
+
+
+@media (min-device-width: 666px) and (max-device-width: 1200px) {
+  .contact-class{
+    width: 44%;
+  }
+  .contact-main{
+    flex-direction: column;
+  }
+}
+
+@media (min-device-width: 1201px) and (max-device-width: 1400px) {
+  .contact-class{
+    width: 27%;
+  }
+}
+    
+    @media (max-width: 800px) {
+      .joinus {
+        flex-direction: column;
+      }
+     
+    }
 
     @media (min-device-width: 120px) and (max-device-width: 665px) {
       .trainer-class{
