@@ -272,6 +272,8 @@ body{
   .form-group{
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
   }
 
   .form-group input{
@@ -462,6 +464,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
   }
   
   .ot-heading{
@@ -487,6 +490,7 @@ body{
       height: 350px;
       overflow: hidden;
       border-radius: 3px;
+      overflow: hidden;
     }
   
     /* .trainer-icon-main{} */
@@ -768,9 +772,6 @@ body{
   border-radius: 3px;
 }
 
-.over{
-  overflow: hidden;
-}
 
 @media  (min-device-width: 461px) and (max-device-width: 770px) {
   .days ul{
