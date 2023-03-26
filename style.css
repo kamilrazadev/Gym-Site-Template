@@ -220,6 +220,7 @@ body{
     color: #b7bcbe;
   }
   .footer-widget {
+    
     margin-top: 40px;
     padding: 15px;
     background-color: #222429;
@@ -268,9 +269,18 @@ body{
     margin-bottom: 10px;
   }
   
-  .signup-form .form-group {
+  .form-group{
     display: flex;
+    position: relative;
   }
+
+  .form-group input{
+    width: 50%;
+  } 
+
+
+
+
   
   .signup-form .form-control {
     flex-grow: 1;
@@ -281,7 +291,8 @@ body{
   }
   
   .signup-form {
-  
+    position: relative;
+    width: 90%;
     background-color: #fb5b21;
     border: none;
     color: white;
@@ -301,6 +312,8 @@ body{
     background-color: #3b3b3b;
   }
   
+
+
   .signup-note {
     margin-top: 20px;
     color: white;
@@ -309,6 +322,10 @@ body{
   }
   
   .orange-background{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     background-color: #fb5b21;
     position: relative;
@@ -318,6 +335,10 @@ body{
     
   }
   
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
   
   .row2{
     background-color: #111111;
@@ -363,14 +384,20 @@ body{
     margin-bottom: 50px;
     }
   
+    .days{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
   .days ul{
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     background-color: #222429;
-    margin-left: 25%;
-    margin-right: 25%;
     border-radius: 20px;
   }
   
@@ -457,8 +484,6 @@ body{
       position: relative;
       display: flex;
       justify-content: center;
-      /* align-items: center; */
-      width: 300px;
       height: 350px;
       overflow: hidden;
       border-radius: 3px;
@@ -743,6 +768,28 @@ body{
   border-radius: 3px;
 }
 
+.over{
+  overflow: hidden;
+}
+
+@media  (min-device-width: 461px) and (max-device-width: 770px) {
+  .days ul{
+      width: 400px;
+  }
+}
+
+@media  (min-device-width: 340px) and (max-device-width: 460px) {
+  .days ul{
+      width: 300px;
+  }
+}
+
+@media  (min-device-width: 100px) and (max-device-width: 341px) {
+  .days ul{
+      width: 250px;
+  }
+}
+
 @media (min-device-width: 120px) and (max-device-width: 999px) {
   .about-content{
     width: 80%;
@@ -806,7 +853,7 @@ body{
     
     @media (min-device-width: 1201px) and (max-device-width: 1400px) {
       .trainer-class{
-        width: 30%;
+        width: 45%;
         height: 20%;
       }
      
@@ -835,6 +882,12 @@ body{
     .footer-widget {
       width: 25%;
       float: left;
+    }
+  }
+  
+  @media (min-device-width: 100px) and (max-device-width: 1024px) {
+    .footer{
+      grid-template-columns: repeat(1, 2fr);
     }
   }
 
